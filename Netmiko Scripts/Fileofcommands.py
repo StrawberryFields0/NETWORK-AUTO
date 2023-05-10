@@ -19,7 +19,7 @@ iosv_l2_s4 = {
     'password': 'cisco'
 }
 
-with open('ios_l2_cisco_dsign') as f:
+with open('iosv_l2_cisco_design') as f:
     lines = f.read().splitlines()
 print (lines)
 
