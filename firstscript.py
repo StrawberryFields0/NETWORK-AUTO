@@ -16,7 +16,7 @@ if password:
 tn.write(b"enable\n")
 tn.write(b"cisco\n")
 tn.write(b"conf t\n")
-tn.write("int loop 0\n")
+tn.write(b"int loop 0\n")
 tn.write(b"ip address 1.1.1.1 255.255.255.255\n")
 tn.write(b"end\n")
 tn.write(b"copy run start\n")
