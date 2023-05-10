@@ -1,2 +1,2 @@
 # NETWORK-AUTO
-This is my scripts from the david bombal netwrok autmation course
+These are my scripts from the david bombal network automation course
