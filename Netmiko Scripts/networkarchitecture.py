@@ -53,7 +53,7 @@ with open('iosv_l2_core') as f:
 print(lines)
 
 
-all_devics = [iosv_l2_s2,iosv_l2_s3,iosv_l2_s4,iosv_l2_s5,iosv_l2_s6]
+all_devics = [iosv_l2_s6, iosv_l2_s5, iosv_l2_s4, iosv_l2_s3, iosv_l2_s2]
 
 for devices in all_devics:
     net_connect = ConnectHandler(**devices)
