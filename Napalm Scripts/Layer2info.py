@@ -10,11 +10,7 @@ iosvl2_1 = {
 iosvl2_1_conn = driver(**iosvl2_1)
 iosvl2_1_conn.open()
 print(f"Connecting to {iosvl2_1['hostname']}")
-ios_output = iosvl2_1_conn.get_facts()
+ios_output = iosvl2_1_conn.get_mac_address_table()
 print (json.dumps(ios_output, indent=4))
-ios_output = iosvl2_1_conn.get_interfaces()
-print (json.dumps(ios_output, sort_keys=True,indent=4))
-ios_output = iosvl2_1_conn.get_interfaces_counters()
-print (json.dumps(ios_output,sort_keys=True, indent=4))
-
-
+ios_output = iosvl2_1_conn.get_arp_table()
+print (json.dumps(ios_output, indent=4))
