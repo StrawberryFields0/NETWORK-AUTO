@@ -4,6 +4,7 @@ iosv_l2_s2 = {
     'ip': '192.168.122.252',
     'username': 'cisco',
     'password': 'cisco'
+  
 }
 
 iosv_l2_s3 = {
@@ -11,6 +12,7 @@ iosv_l2_s3 = {
     'ip': '192.168.122.251',
     'username': 'cisco',
     'password': 'cisco'
+
 }
 
 iosv_l2_s4 = {
@@ -18,6 +20,7 @@ iosv_l2_s4 = {
     'ip': '192.168.122.250',
     'username': 'cisco',
     'password': 'cisco'
+
 }
 
 iosv_l2_s5 = {
@@ -56,3 +59,4 @@ for devices in all_devics:
     net_connect = ConnectHandler(**devices)
     output = net_connect.send_config_set(lines)
     print (output)
+    
