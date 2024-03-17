@@ -14,7 +14,7 @@ ios_l3_R1 = {
     'password': password,
 }
 # Dictionary for Netmiko connection 
-etwork1 = input("put in your network that you want to broadcast for OSPF:")
+network1 = input("put in your network that you want to broadcast for OSPF:")
 wildcardmask1 = input("put in the wildcard mask for your network:")
 area1 = input("put in the area for OSPF")
 routerid1 = input("put in your desired router ID")
