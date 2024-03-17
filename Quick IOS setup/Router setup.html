@@ -1,31 +1,48 @@
-<header Hey this how I do a quickstart for my IOS routers, 
-I copy and paste it into the terminal 
-and I quickly get basic remote access via ssh setup>
-</header>
-
-
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QUICK SETUP FOR IOS ROUTERS</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        h1 {
+            font-size: large;
+            color: #00BCEB;
+        }
+    </style>
+</head>
 <body>
-    conf t
-    no ip domain-lookup
-    ena sec cisco
-    username admin Privilege 15 password cisco
-    service password-encryption
-    ip domain name cisco
-    ho r1
-    crypto key generate rsa
-    2048
-    int g0/0
-    ip address 192.168.1.1 255.255.255.248
-    no shut
-    int g0/1 
-    ip address 10.0.0.2 255.255.255.252
-    no shut 
-    lin vty 0 15 
-    transport input	ssh
-    login local
-    exit
-    banner motd "No unauthorize access plz"
-    end
-    copy run start
-
+    <h1>Hey, this is how I do a quickstart for my IOS routers.
+        I copy and paste it into the terminal and I quickly get basic remote access via SSH setup.
+    </h1>
+    </p>
+    <p>
+        <pre>
+            conf t
+            no ip domain-lookup
+            enable secret cisco
+            username admin privilege 15 password cisco
+            service password-encryption
+            ip domain name cisco
+            hostname r1
+            crypto key generate rsa modulus 2048
+            interface GigabitEthernet0/0
+            ip address 192.168.1.1 255.255.255.248
+            no shutdown
+            exit
+            interface GigabitEthernet0/1
+            ip address 10.0.0.2 255.255.255.252
+            no shutdown
+            line vty 0 15
+            transport input ssh
+            login local
+            exit
+            banner motd "No unauthorized access please"
+            end
+            copy running-config startup-config
+        </pre>
+    </p>
 </body>
+</html>
