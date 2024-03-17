@@ -1,2 +1,2 @@
 # NETWORK-AUTO
-These are my scripts from the david bombal network automation course
+These are my scripts that I have written to help with the automation of cisco networks 
