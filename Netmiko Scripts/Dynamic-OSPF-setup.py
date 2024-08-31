@@ -1,11 +1,11 @@
 from netmiko import ConnectHandler
 import getpass
 # Importing required dependinceis for the script
-IPadd1 = input("enter the IP adfdress of your router: ")
+def IPadd1 = input("enter the IP adfdress of your router: ")
 # Defining the Ipaddress for your device your configuring 
-user = input("enter your username:" )
+def user = input("enter your username:" )
 # Dynamicly defining your username 
-password = getpass.getpass()
+def password = getpass.getpass()
 # Dynamically defining your password
 ios_l3_R1 = {
     'device_type': 'cisco_ios',
